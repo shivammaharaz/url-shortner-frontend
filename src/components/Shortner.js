@@ -14,7 +14,7 @@ const Shortner = () => {
     console.log(url);
   };
   const handleClick = async () => {
-    const data = await axios.post("https://url-shortner-git-master-shivammaharaz.vercel.app/", {
+    const data = await axios.post("https://url-shortner-shivammaharaz.vercel.app/", {
       url: url,
     });
     setShortUrl(data.data.url);
