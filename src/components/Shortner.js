@@ -14,7 +14,7 @@ const Shortner = () => {
     console.log(url);
   };
   const handleClick = async () => {
-    const data = await axios.post("https://zipa.world/", {
+    const data = await axios.post("https://zipa.world/shortUrl", {
       url: url,
     });
     setShortUrl(data.data.result);
