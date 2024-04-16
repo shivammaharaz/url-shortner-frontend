@@ -14,10 +14,10 @@ const Shortner = () => {
     console.log(url);
   };
   const handleClick = async () => {
-    const data = await axios.post("https://url-shortner-shivammaharaz.vercel.app/", {
+    const data = await axios.post("https://zipa.world/", {
       url: url,
     });
-    setShortUrl(data.data.url);
+    setShortUrl(data.data.result);
     console(data.data);
     if (!data.data) {
       alert("unauthorised url");
